@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3 2 1... Blast Off</title>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+
+<body background="../assets/background.jpg">
+<img class="rocketLeft" src="../assets/rocket.gif">
+<img class="rocketRight" src="../assets/rocket.gif">
+<div class="container">
+    <div class="jumbotron">
+        <center><h1>3 2 1... Blast Off</h1></center>
+        <p><center><h2>Defy Gravity and Blast off to Victory!</h2></center></p>
+    </div>
+    <div class="row">
+        <div class="col-xs-9">
+            <p id="gameLink">
+            <p>
+
+            </p>
+            <div id="game"> </div>
+            </p>
+        </div>
+        <div class="col-xs-3">
+            <P>
+
+            </P>
+            <div class="jumbotron">
+            <div id="greeting">
+                <form id="greeting-form" class="form-inline" method="post" action="/score">
+                    <div class="form-group">
+                        <label for="fullName">What is your name?</label>
+                        <input type="text" id="fullName" class="form-control"
+                               name="fullName" placeholder="Enter Name">
+
+                        <label for="email">What is your email?</label>
+                        <input type="email" id="email" class="form-control"
+                               name="email" placeholder="Enter Email">
+
+                        <input type="hidden" id="score" name="score" value="0">
+
+                    </div>
+                    <p>
+
+                    </p>
+                    <button class="btn btn-default" type="submit">OK</button>                    </p>
+                </form>
+            </div>
+            <p>
+
+            </p>
+            <p>The highest scorers are:
+            <ul id="scoreBoard">
+            </ul>
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../lib/jquery.js"></script>
+<script type="text/javascript" src="../lib/phaser.min.js"></script>
+<script type="text/javascript" src="../js/flappy.js"></script>
+</body>
+
+</html>

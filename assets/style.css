@@ -1,0 +1,38 @@
+h1 {
+    color: #260d82;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2 {
+    color: #260d82;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.score {
+    color: #c0c0c0;
+}
+.gold {
+    color: gold;
+}
+.bronze {
+    color: #cd7f32;
+}
+#gameLink {
+    width:1140px;
+    height:0px;
+    border:2px dotted orange;
+}
+
+.rocketLeft {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.rocketRight {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
