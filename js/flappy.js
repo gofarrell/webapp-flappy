@@ -30,7 +30,7 @@ function preload() {
         var greeting_message = greeting + name;
         jQuery("#greeting-form").hide();
         jQuery("#greeting").append("<p>" + greeting_message + "</p>");
-        //event_details.preventDefault();
+        event_details.preventDefault();
 
         setTimeout(function() {
             location.assign("index.html");
@@ -245,7 +245,6 @@ function gameOver(){
     //set.background()
     $("#score").val(score.toString());
     gameGravity = 200;
-    //location.reload();
 }
 
 

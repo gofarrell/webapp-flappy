@@ -19,9 +19,10 @@ app.post('/score', function(request, response){
     var name = request.body.fullName;
     var email = request.body.email;
     var score = request.body.score;
+    var comment = request.body.comment;
 
     var database = csv.createCsvFileWriter("scores.csv", {"flags": "a"});
-    var data = [name, email, score];
+    var data = [name, email, score,comment];
 
     database.writeRecord(data);
     database.writeStream.end();
@@ -30,7 +31,7 @@ app.post('/score', function(request, response){
 });
 app.get("/score", function(request, response) {
     var reader = csv.createCsvFileReader("scores.csv");
-    reader.setColumnNames(["name", "email", "score"]);
+    reader.setColumnNames(["name", "email", "score", "comment"]);
 
     var scores = [];
     reader.addListener("data", function(data) {
